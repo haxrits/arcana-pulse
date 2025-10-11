@@ -231,6 +231,9 @@ const Index = () => {
           <p className="mb-4">
             All information is sourced from publicly available documents. Last updated: 2025-01-15
           </p>
+          <p className="mb-4 text-xs">
+            Developed by rithik
+          </p>
           <div className="flex items-center justify-center gap-6">
             <Button variant="link" size="sm" className="text-primary">
               About & Methodology
