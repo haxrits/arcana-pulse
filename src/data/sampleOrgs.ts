@@ -234,5 +234,346 @@ export const sampleOrganizations: OrganizationData[] = [
     confidenceNote: "Extensively documented through Peruvian CVR and government sources. Current operational capacity is disputed; some sources indicate only fragmented cells remain.",
     relatedEntities: ["MRTA (Túpac Amaru Revolutionary Movement)"],
     conflictNotes: "Current strength estimates vary. Some sources classify as 'largely defunct' while others note continued minor activity in VRAEM region."
+  },
+  {
+    id: "eta-basque",
+    name: "Euskadi Ta Askatasuna (ETA)",
+    aliases: ["ETA", "Basque Homeland and Freedom"],
+    status: "defunct",
+    regions: ["Spain", "France", "Basque Country"],
+    yearEstablished: "1959",
+    leadership: [
+      {
+        name: "Organization dissolved",
+        title: "N/A",
+        source: "Spanish Ministry of Interior",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Basque nationalist and separatist organization that sought independence for the Basque Country through armed struggle. Combined Marxist-Leninist ideology with Basque nationalism.",
+    knownOperatives: ["[See Spanish court records for convicted members]"],
+    notableAttacks: [
+      {
+        date: "1973-12-20",
+        location: "Madrid, Spain",
+        summary: "Assassination of Spanish Prime Minister Luis Carrero Blanco via car bomb",
+        casualties: "3 deaths",
+        source: "Spanish National Court records; El País archives"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "European Union",
+        date: "2002",
+        documentLink: "EU Council Decision 2002/334/EC"
+      },
+      {
+        authority: "Self-dissolved",
+        date: "2018-05-02",
+        documentLink: "ETA dissolution announcement"
+      }
+    ],
+    summary: "ETA was a Basque nationalist and separatist organization active from 1959 to 2018. During its armed campaign, the group was responsible for over 800 deaths. ETA targeted Spanish government officials, security forces, and politicians, as well as conducting bombings against civilian targets. The organization's activities significantly decreased in the 2000s following international cooperation and peace initiatives. In 2011, ETA announced a definitive cessation of armed activity, and formally dissolved in 2018.",
+    references: [
+      {
+        title: "Endgame for ETA: Elusive Peace in the Basque Country",
+        author: "Teresa Whitfield",
+        publication: "Oxford University Press",
+        url: "ISBN: 0190844388",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "The Basque Conflict: ETA Historical Overview",
+        author: "Spanish Ministry of Interior",
+        publication: "Government Report",
+        url: "http://www.interior.gob.es/",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 94,
+    confidenceNote: "Extensively documented through Spanish and French legal proceedings, government reports, and decades of investigative journalism.",
+    relatedEntities: ["Terra Lliure", "IRA (support relationship)"],
+    conflictNotes: "Political interpretations vary regarding legitimacy of armed struggle, but operational facts are well-documented."
+  },
+  {
+    id: "al-qaeda",
+    name: "Al-Qaeda",
+    aliases: ["The Base", "Al-Qa'ida", "International Front for Jihad"],
+    status: "active",
+    regions: ["Global", "Middle East", "North Africa", "South Asia"],
+    yearEstablished: "1988",
+    leadership: [
+      {
+        name: "Ayman al-Zawahiri (reported deceased 2022)",
+        title: "Emir",
+        source: "U.S. Intelligence reports",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Sunni Islamist militant organization advocating global jihad against Western influence and governments it considers apostate. Seeks establishment of a pan-Islamic caliphate under strict interpretation of Sharia law.",
+    knownOperatives: ["[See U.S. Most Wanted Terrorists list and UN Security Council designations]"],
+    notableAttacks: [
+      {
+        date: "2001-09-11",
+        location: "New York, Washington DC, Pennsylvania, USA",
+        summary: "Coordinated hijacking of four commercial aircraft targeting World Trade Center, Pentagon, and other targets",
+        casualties: "2,977 deaths (public record)",
+        source: "9/11 Commission Report; FBI records"
+      },
+      {
+        date: "1998-08-07",
+        location: "Nairobi, Kenya and Dar es Salaam, Tanzania",
+        summary: "Simultaneous truck bombings of U.S. embassies",
+        casualties: "224 deaths, over 4,000 injured",
+        source: "FBI investigation records; U.S. court documents"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1999-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "UN Security Council",
+        date: "1999-10-15",
+        documentLink: "UNSC Resolution 1267"
+      }
+    ],
+    summary: "Al-Qaeda is a global Sunni Islamist militant organization founded by Osama bin Laden in 1988. The group is responsible for numerous high-profile terrorist attacks, most notably the September 11, 2001 attacks in the United States. Following sustained military pressure and the deaths of key leaders including bin Laden (2011) and al-Zawahiri (2022), the organization has become decentralized with regional affiliates operating semi-autonomously. Despite leadership losses, affiliated networks remain active.",
+    references: [
+      {
+        title: "The 9/11 Commission Report",
+        author: "National Commission on Terrorist Attacks",
+        publication: "U.S. Government Printing Office",
+        url: "https://www.9-11commission.gov/report/",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Al-Qaeda: Profile and Threat Assessment",
+        author: "Congressional Research Service",
+        publication: "CRS Report for Congress",
+        url: "https://fas.org/sgp/crs/terror/",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 96,
+    confidenceNote: "Extensively documented through U.S. court proceedings, intelligence reports, UN documentation, and the 9/11 Commission Report.",
+    relatedEntities: ["Al-Qaeda in the Arabian Peninsula (AQAP)", "Al-Qaeda in the Islamic Maghreb (AQIM)", "Al-Shabaab", "Taliban"],
+    conflictNotes: "Current operational capacity and leadership structure subject to ongoing intelligence assessment."
+  },
+  {
+    id: "pira",
+    name: "Provisional Irish Republican Army",
+    aliases: ["Provisional IRA", "PIRA", "Provos"],
+    status: "defunct",
+    regions: ["Northern Ireland", "Republic of Ireland", "United Kingdom"],
+    yearEstablished: "1969",
+    leadership: [
+      {
+        name: "Leadership transitioned to political structures",
+        title: "Organization stood down",
+        source: "Independent International Commission on Decommissioning",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Irish republican paramilitary organization that sought to end British rule in Northern Ireland and reunify Ireland. Combined Irish nationalism with socialist ideology.",
+    knownOperatives: ["[See UK court records and Historical Enquiries Team reports]"],
+    notableAttacks: [
+      {
+        date: "1987-11-08",
+        location: "Enniskillen, Northern Ireland",
+        summary: "Remembrance Day bombing during memorial ceremony",
+        casualties: "12 deaths, 63 injured",
+        source: "Historical Enquiries Team; Police Service of Northern Ireland archives"
+      },
+      {
+        date: "1996-02-09",
+        location: "London Docklands, England",
+        summary: "Large truck bomb ending 17-month ceasefire",
+        casualties: "2 deaths, over 100 injured",
+        source: "Metropolitan Police records; BBC archives"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "UK Proscribed Organizations",
+        date: "1974",
+        documentLink: "UK Terrorism Act 2000"
+      },
+      {
+        authority: "Ceasefire and decommissioning",
+        date: "2005-07-28",
+        documentLink: "Independent International Commission on Decommissioning reports"
+      }
+    ],
+    summary: "The Provisional IRA was an Irish republican paramilitary organization active from 1969 to 2005. Formed during the Troubles in Northern Ireland, the group conducted a sustained armed campaign against British security forces and carried out bombings in Northern Ireland, England, and continental Europe. The conflict resulted in approximately 1,800 deaths attributed to the Provisional IRA. Following the 1998 Good Friday Agreement, the organization officially ended its armed campaign in 2005 and completed weapons decommissioning.",
+    references: [
+      {
+        title: "Armed Struggle: The History of the IRA",
+        author: "Richard English",
+        publication: "Oxford University Press",
+        url: "ISBN: 0195177533",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Lost Lives: The Stories of the Men, Women and Children Who Died in the Northern Ireland Troubles",
+        author: "David McKittrick et al.",
+        publication: "Mainstream Publishing",
+        url: "ISBN: 1840188529",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 93,
+    confidenceNote: "Extensively documented through UK inquiries, court records, Historical Enquiries Team reports, and the Independent International Commission on Decommissioning.",
+    relatedEntities: ["Sinn Féin", "Real IRA", "Continuity IRA"],
+    conflictNotes: "Political interpretations of the conflict vary significantly, but operational facts are well-documented through official inquiries and court proceedings."
+  },
+  {
+    id: "boko-haram",
+    name: "Boko Haram",
+    aliases: ["Jama'atu Ahlis Sunna Lidda'awati wal-Jihad", "Islamic State West Africa Province (ISWAP faction)"],
+    status: "active",
+    regions: ["Nigeria", "Niger", "Chad", "Cameroon"],
+    yearEstablished: "2002",
+    leadership: [
+      {
+        name: "Abubakar Shekau (reported deceased 2021)",
+        title: "Former leader",
+        source: "Nigerian security sources; ISWAP propaganda",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Islamist insurgent group seeking to establish Islamic state in northeastern Nigeria and surrounding regions. Opposes Western education and influence, advocates strict interpretation of Sharia law.",
+    knownOperatives: ["[See Nigerian court records and UN reports]"],
+    notableAttacks: [
+      {
+        date: "2014-04-14",
+        location: "Chibok, Borno State, Nigeria",
+        summary: "Mass abduction of 276 schoolgirls from Government Secondary School",
+        casualties: "Ongoing trauma; many remain missing",
+        source: "Nigerian government reports; Human Rights Watch documentation"
+      },
+      {
+        date: "2015-01-03",
+        location: "Baga, Nigeria",
+        summary: "Massacre during capture of town and military base",
+        casualties: "Estimates vary from hundreds to 2,000 deaths",
+        source: "Amnesty International reports; satellite imagery analysis"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "2013-11-13",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "UN Security Council",
+        date: "2014-05-22",
+        documentLink: "UNSC Al-Qaida Sanctions List"
+      }
+    ],
+    summary: "Boko Haram is an Islamist insurgent group based in northeastern Nigeria, founded by Mohammed Yusuf in 2002. The group gained international attention following the 2014 Chibok schoolgirls kidnapping. Boko Haram has conducted numerous attacks on civilian populations, government institutions, and security forces. In 2015, a faction pledged allegiance to ISIS, becoming Islamic State West Africa Province. The insurgency has resulted in tens of thousands of deaths and displaced millions. The group has fractured into competing factions following leadership conflicts.",
+    references: [
+      {
+        title: "Boko Haram: The History of an African Jihadist Movement",
+        author: "Alexander Thurston",
+        publication: "Princeton University Press",
+        url: "ISBN: 0691172870",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Nigeria: Boko Haram Crisis Update",
+        author: "Human Rights Watch",
+        publication: "HRW Reports",
+        url: "https://www.hrw.org/tag/boko-haram",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 87,
+    confidenceNote: "Documented through Nigerian government sources, UN reports, NGO investigations, and media coverage. Some attack casualty figures disputed due to remote locations and ongoing conflict.",
+    relatedEntities: ["Islamic State West Africa Province (ISWAP)", "Ansaru"],
+    conflictNotes: "Current organizational structure is fragmented. Casualty estimates for some attacks vary significantly between sources."
+  },
+  {
+    id: "farc",
+    name: "Revolutionary Armed Forces of Colombia",
+    aliases: ["FARC", "FARC-EP", "Fuerzas Armadas Revolucionarias de Colombia"],
+    status: "defunct",
+    regions: ["Colombia", "South America"],
+    yearEstablished: "1964",
+    leadership: [
+      {
+        name: "Organization transitioned to political party",
+        title: "Demobilized 2017",
+        source: "Colombian Government Peace Accord",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Marxist-Leninist guerrilla organization that sought to overthrow the Colombian government and redistribute land to peasants. Funded operations through drug trafficking, kidnapping, and extortion.",
+    knownOperatives: ["[See Colombian peace process documentation and court records]"],
+    notableAttacks: [
+      {
+        date: "2002-02-20",
+        location: "Various locations, Colombia",
+        summary: "Presidential inauguration bombings in Bogotá and other cities",
+        casualties: "Approximately 20 deaths, over 60 injured",
+        source: "Colombian Ministry of Defense; El Tiempo archives"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "European Union",
+        date: "2002",
+        documentLink: "EU terrorist list"
+      },
+      {
+        authority: "Peace Accord and demobilization",
+        date: "2016-11-24",
+        documentLink: "Colombian Peace Agreement"
+      }
+    ],
+    summary: "FARC was Colombia's largest guerrilla organization, active from 1964 to 2017. The group waged Latin America's longest-running insurgency, involving armed conflict with Colombian government forces, right-wing paramilitaries, and drug cartels. The conflict resulted in over 220,000 deaths and displaced millions. After years of negotiations, FARC signed a peace accord in 2016 and completed demobilization in 2017, transitioning to a political party. Dissident factions that rejected the peace process continue limited operations.",
+    references: [
+      {
+        title: "Colombian Peace Agreement Final Text",
+        author: "Colombian Government and FARC-EP",
+        publication: "Official Peace Accord",
+        url: "https://peaceaccords.nd.edu/accord/colombian-final-agreement",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "FARC: The Longest Insurgency",
+        author: "Gary Leech",
+        publication: "Zed Books",
+        url: "ISBN: 1842778935",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 91,
+    confidenceNote: "Extensively documented through Colombian government records, UN verification mission reports, and peace process documentation. Some historical casualty figures subject to ongoing investigation.",
+    relatedEntities: ["ELN (National Liberation Army)", "FARC dissidents"],
+    conflictNotes: "While main organization demobilized, dissident groups continue operations. Peace process implementation remains incomplete."
   }
 ];

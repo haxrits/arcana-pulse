@@ -32,6 +32,22 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Animated Tagline */}
+      <div className="relative overflow-hidden border-b border-primary/20 bg-gradient-to-r from-background via-primary/5 to-background">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(0,229,255,0.1)_50%,transparent_100%)] animate-scan-line" />
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <p className="text-center text-sm md:text-base font-mono text-primary/80 animate-fade-in tracking-wide">
+            <span className="inline-block animate-pulse mr-2">●</span>
+            VERIFIED DATA INTELLIGENCE SYSTEM
+            <span className="mx-3 text-primary/40">|</span>
+            ACADEMIC RESEARCH PLATFORM
+            <span className="mx-3 text-primary/40">|</span>
+            MULTI-SOURCE VERIFICATION PROTOCOL
+            <span className="inline-block animate-pulse ml-2">●</span>
+          </p>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-6">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent pointer-events-none" />
