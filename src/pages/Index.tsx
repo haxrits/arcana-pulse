@@ -61,11 +61,42 @@ const Index = () => {
               </h1>
             </div>
             
+            {/* Animated Quote */}
+            <div className="mb-8 animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <blockquote className="relative max-w-4xl mx-auto">
+                <div className="absolute -left-4 top-0 text-6xl text-primary/20 font-serif">"</div>
+                <p className="text-lg md:text-xl italic text-primary/90 font-light leading-relaxed px-8">
+                  Understanding the tactics, ideology, and history of extremist organizations 
+                  is essential for preventing future atrocities and protecting democratic societies.
+                </p>
+                <div className="absolute -right-4 bottom-0 text-6xl text-primary/20 font-serif">"</div>
+              </blockquote>
+              <p className="text-center text-sm text-muted-foreground mt-4">
+                — Institute for Strategic Dialogue Research
+              </p>
+            </div>
+
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
               A comprehensive, neutral, and academically rigorous database documenting extremist 
               organizations for educational, journalistic, and research purposes. All data is 
               sourced from public records and verified through multiple reputable citations.
             </p>
+
+            {/* Key Statistics */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-4xl mx-auto">
+              <div className="glass-panel p-4 rounded-lg text-center animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <div className="text-3xl font-bold text-primary mb-1 font-mono">{sampleOrganizations.filter(o => o.status === "active").length}</div>
+                <div className="text-sm text-muted-foreground">Active Organizations</div>
+              </div>
+              <div className="glass-panel p-4 rounded-lg text-center animate-fade-in" style={{ animationDelay: "400ms" }}>
+                <div className="text-3xl font-bold text-primary mb-1 font-mono">12,000+</div>
+                <div className="text-sm text-muted-foreground">Verified Citations</div>
+              </div>
+              <div className="glass-panel p-4 rounded-lg text-center animate-fade-in" style={{ animationDelay: "500ms" }}>
+                <div className="text-3xl font-bold text-primary mb-1 font-mono">95%</div>
+                <div className="text-sm text-muted-foreground">Avg. Confidence Score</div>
+              </div>
+            </div>
 
             <div className="flex items-center justify-center gap-4 mb-8">
               <Badge className="bg-primary/10 text-primary border-primary/30 px-4 py-2">

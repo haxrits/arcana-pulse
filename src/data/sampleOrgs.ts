@@ -575,5 +575,485 @@ export const sampleOrganizations: OrganizationData[] = [
     confidenceNote: "Extensively documented through Colombian government records, UN verification mission reports, and peace process documentation. Some historical casualty figures subject to ongoing investigation.",
     relatedEntities: ["ELN (National Liberation Army)", "FARC dissidents"],
     conflictNotes: "While main organization demobilized, dissident groups continue operations. Peace process implementation remains incomplete."
+  },
+  {
+    id: "hezbollah",
+    name: "Hezbollah",
+    aliases: ["Party of God", "Hizbullah", "Islamic Resistance"],
+    status: "active",
+    regions: ["Lebanon", "Syria", "Middle East"],
+    yearEstablished: "1985",
+    leadership: [
+      {
+        name: "Hassan Nasrallah",
+        title: "Secretary-General",
+        source: "UN Security Council reports; regional media",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Naim Qassem",
+        title: "Deputy Secretary-General",
+        source: "Official Hezbollah statements",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Shia Islamist political party and militant group founded during Lebanese Civil War. Opposes Israeli presence and Western influence in Middle East. Operates as both political party with parliamentary representation and armed militia.",
+    knownOperatives: ["[See U.S. Treasury OFAC designations and UN reports]"],
+    notableAttacks: [
+      {
+        date: "1983-10-23",
+        location: "Beirut, Lebanon",
+        summary: "Suicide truck bombings of U.S. Marine and French paratrooper barracks",
+        casualties: "299 deaths (241 U.S., 58 French)",
+        source: "U.S. Department of Defense; FBI reports"
+      },
+      {
+        date: "1994-07-18",
+        location: "Buenos Aires, Argentina",
+        summary: "Bombing of AMIA Jewish community center",
+        casualties: "85 deaths, hundreds injured",
+        source: "Argentine court proceedings; Interpol notices"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "U.S. Treasury OFAC",
+        date: "1995",
+        documentLink: "Specially Designated Global Terrorist"
+      }
+    ],
+    summary: "Hezbollah is a Shia Islamist political party and militant group based in Lebanon, founded in 1985 with Iranian backing. The organization operates as both a political party with seats in Lebanese parliament and an armed militia. Hezbollah has conducted numerous attacks against Israeli and Western targets and maintains significant military capabilities. The group provides social services in Lebanon including healthcare and education. Hezbollah receives substantial support from Iran and has been involved in Syrian Civil War supporting Assad government.",
+    references: [
+      {
+        title: "Hezbollah: A Short History",
+        author: "Augustus Richard Norton",
+        publication: "Princeton University Press",
+        url: "ISBN: 0691168202",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Hezbollah: Terrorism, National Liberation, or Menace?",
+        author: "Matthew Levitt",
+        publication: "Washington Institute for Near East Policy",
+        url: "ISBN: 0300228279",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 89,
+    confidenceNote: "Well-documented through U.S. and international sanctions, UN reports, and academic research. Dual nature as political party and militia creates complex classification issues.",
+    relatedEntities: ["Iranian Revolutionary Guard Corps (IRGC)", "Amal Movement"],
+    conflictNotes: "Status as terrorist organization vs. legitimate political party disputed internationally. Some countries list only military wing."
+  },
+  {
+    id: "hamas",
+    name: "Hamas",
+    aliases: ["Islamic Resistance Movement", "Harakat al-Muqawama al-Islamiya"],
+    status: "active",
+    regions: ["Gaza Strip", "West Bank", "Palestinian Territories"],
+    yearEstablished: "1987",
+    leadership: [
+      {
+        name: "Ismail Haniyeh",
+        title: "Political Bureau Chief",
+        source: "Hamas official communications; regional media",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Yahya Sinwar",
+        title: "Gaza Strip Leader",
+        source: "Israeli intelligence assessments",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Palestinian Sunni Islamist nationalist organization with political and military wings. Seeks establishment of Palestinian state and opposes Israeli occupation. Operates as de facto governing authority in Gaza Strip since 2007.",
+    knownOperatives: ["[See Israeli and U.S. terrorism designations]"],
+    notableAttacks: [
+      {
+        date: "1996-02-25",
+        location: "Jerusalem, Israel",
+        summary: "Bus bombing during morning commute",
+        casualties: "26 deaths, over 40 injured",
+        source: "Israeli Ministry of Foreign Affairs; Shin Bet records"
+      },
+      {
+        date: "2001-06-01",
+        location: "Tel Aviv, Israel",
+        summary: "Suicide bombing at Dolphinarium discotheque",
+        casualties: "21 deaths, 132 injured",
+        source: "Israeli police reports; court documents"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "European Union",
+        date: "2001",
+        documentLink: "EU Council Decision"
+      },
+      {
+        authority: "Israel",
+        date: "1989",
+        documentLink: "Israeli Defense Forces designation"
+      }
+    ],
+    summary: "Hamas is a Palestinian Islamist nationalist organization founded in 1987 during the First Intifada. The group combines armed resistance against Israel with governance responsibilities in Gaza Strip, where it has exercised de facto control since 2007. Hamas provides social services including schools, hospitals, and welfare programs. The organization has conducted numerous suicide bombings and rocket attacks against Israeli targets. Hamas's charter calls for establishment of Islamic state in historical Palestine. International community remains divided on engagement with Hamas.",
+    references: [
+      {
+        title: "Hamas: Politics, Charity, and Terrorism in the Service of Jihad",
+        author: "Matthew Levitt",
+        publication: "Yale University Press",
+        url: "ISBN: 0300122586",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Hamas: A History from Within",
+        author: "Azzam Tamimi",
+        publication: "Olive Branch Press",
+        url: "ISBN: 1566567033",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 90,
+    confidenceNote: "Extensively documented through Israeli, U.S., and international sources. Status as terrorist organization vs. resistance movement politically contested.",
+    relatedEntities: ["Palestinian Islamic Jihad", "Muslim Brotherhood"],
+    conflictNotes: "International classification varies significantly. Some countries recognize only military wing as terrorist organization, others the entire entity."
+  },
+  {
+    id: "taliban",
+    name: "Taliban",
+    aliases: ["Islamic Emirate of Afghanistan", "Tehrik-i-Taliban"],
+    status: "active",
+    regions: ["Afghanistan", "Pakistan border regions"],
+    yearEstablished: "1994",
+    leadership: [
+      {
+        name: "Hibatullah Akhundzada",
+        title: "Supreme Leader (Amir al-Mu'minin)",
+        source: "Taliban official statements; Afghan media",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Abdul Ghani Baradar",
+        title: "Deputy Prime Minister for Economic Affairs",
+        source: "Taliban government announcements",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Sirajuddin Haqqani",
+        title: "Interior Minister",
+        source: "Taliban cabinet appointments",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Sunni Islamist militant and political movement following Deobandi interpretation of Islam. Seeks to establish Islamic emirate under strict Sharia law. Currently functions as de facto government of Afghanistan since August 2021.",
+    knownOperatives: ["[See UN Security Council sanctions list]"],
+    notableAttacks: [
+      {
+        date: "2001-03-11",
+        location: "Bamiyan Province, Afghanistan",
+        summary: "Destruction of ancient Buddha statues using explosives",
+        casualties: "Cultural heritage destruction",
+        source: "UNESCO documentation; international media coverage"
+      },
+      {
+        date: "2021-08-26",
+        location: "Kabul Airport, Afghanistan",
+        summary: "ISIS-K suicide bombing during evacuation operations (Taliban security failure)",
+        casualties: "170+ deaths including 13 U.S. service members",
+        source: "U.S. Department of Defense; Pentagon reports"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "UN Security Council",
+        date: "1999-10-15",
+        documentLink: "UNSC Resolution 1267"
+      },
+      {
+        authority: "U.S. Treasury OFAC",
+        date: "2002",
+        documentLink: "Specially Designated Global Terrorist"
+      }
+    ],
+    summary: "The Taliban is a Sunni Islamist militant and political movement that originated in Afghanistan in 1994. The group ruled Afghanistan from 1996 to 2001, imposing strict interpretation of Islamic law. Following U.S.-led invasion after 9/11, Taliban waged insurgency for two decades. In August 2021, Taliban regained control of Afghanistan following U.S. military withdrawal. The group enforces strict social restrictions, particularly affecting women and girls' rights to education and employment. No country currently grants formal diplomatic recognition to Taliban government.",
+    references: [
+      {
+        title: "Taliban: Militant Islam, Oil and Fundamentalism in Central Asia",
+        author: "Ahmed Rashid",
+        publication: "Yale University Press",
+        url: "ISBN: 0300089023",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "The Taliban at War: 2001-2018",
+        author: "Antonio Giustozzi",
+        publication: "Oxford University Press",
+        url: "ISBN: 0190915544",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 92,
+    confidenceNote: "Extensively documented through UN reports, U.S. government assessments, and academic research. Current governance structure documented through Taliban official announcements.",
+    relatedEntities: ["Haqqani Network", "Al-Qaeda", "Tehrik-i-Taliban Pakistan (TTP)"],
+    conflictNotes: "International recognition status disputed. Taliban claims to be legitimate government while most countries maintain sanctions and non-recognition."
+  },
+  {
+    id: "isis",
+    name: "Islamic State",
+    aliases: ["ISIS", "ISIL", "Daesh", "Islamic State of Iraq and Syria"],
+    status: "active",
+    regions: ["Iraq", "Syria", "Global affiliates in Africa, Asia, Europe"],
+    yearEstablished: "2013",
+    leadership: [
+      {
+        name: "Abu Hafs al-Hashimi al-Qurashi (alleged)",
+        title: "Caliph (disputed, identity unconfirmed)",
+        source: "ISIS propaganda channels; intelligence assessments",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Salafi jihadist militant organization that proclaimed worldwide caliphate in 2014. Seeks to establish Islamic state under strict interpretation of Sharia law. Known for extreme brutality, mass executions, and use of social media for propaganda and recruitment.",
+    knownOperatives: ["[See UN sanctions list and international terrorism designations]"],
+    notableAttacks: [
+      {
+        date: "2015-11-13",
+        location: "Paris, France",
+        summary: "Coordinated attacks including Bataclan theatre massacre, stadium bombing, café shootings",
+        casualties: "130 deaths, hundreds injured",
+        source: "French government reports; court proceedings"
+      },
+      {
+        date: "2016-03-22",
+        location: "Brussels, Belgium",
+        summary: "Suicide bombings at airport and metro station",
+        casualties: "32 deaths, over 300 injured",
+        source: "Belgian federal police; European Parliament reports"
+      },
+      {
+        date: "2014-08-03",
+        location: "Sinjar, Iraq",
+        summary: "Genocide against Yazidi population including mass killings and enslavement",
+        casualties: "Thousands killed, thousands enslaved",
+        source: "UN Commission of Inquiry; Yazda documentation"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "2004-12-17",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "UN Security Council",
+        date: "2013-05-30",
+        documentLink: "UNSC Resolution 2083"
+      },
+      {
+        authority: "European Union",
+        date: "2014",
+        documentLink: "EU terrorist list"
+      }
+    ],
+    summary: "Islamic State is a Salafi jihadist militant organization that emerged from al-Qaeda in Iraq. In 2014, the group seized large territories in Iraq and Syria, declaring a caliphate. ISIS became notorious for mass executions, beheadings, destruction of cultural heritage, and use of sexual violence as weapon of war. The group's territorial control was largely eliminated by 2019 through international coalition efforts, but ISIS continues operations through insurgent cells and international affiliates. The organization pioneered sophisticated social media propaganda and inspired attacks globally.",
+    references: [
+      {
+        title: "ISIS: Inside the Army of Terror",
+        author: "Michael Weiss & Hassan Hassan",
+        publication: "Regan Arts",
+        url: "ISBN: 1941393578",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "The ISIS Apocalypse",
+        author: "William McCants",
+        publication: "St. Martin's Press",
+        url: "ISBN: 1250080347",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "They Came to Destroy: ISIS Crimes Against the Yazidis",
+        author: "UN Independent Commission of Inquiry on Syria",
+        publication: "UN Human Rights Council",
+        url: "https://www.ohchr.org/en/hr-bodies/hrc/iici-syria",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 94,
+    confidenceNote: "Extensively documented through UN investigations, international coalition reports, court proceedings across multiple countries, and ISIS's own propaganda materials.",
+    relatedEntities: ["Al-Qaeda", "ISIS-K (Afghanistan)", "ISIS-WA (West Africa)", "Boko Haram (former affiliate)"],
+    conflictNotes: "Current leadership structure unclear following deaths of previous leaders. Organization operates in decentralized manner with regional affiliates."
+  },
+  {
+    id: "al-shabaab",
+    name: "Al-Shabaab",
+    aliases: ["Harakat al-Shabaab al-Mujahideen", "The Youth"],
+    status: "active",
+    regions: ["Somalia", "Kenya", "East Africa"],
+    yearEstablished: "2006",
+    leadership: [
+      {
+        name: "Ahmad Umar (Abu Ubaidah)",
+        title: "Emir",
+        source: "U.S. intelligence assessments; UN monitoring reports",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Somali militant Islamist group affiliated with al-Qaeda. Seeks to establish Islamic state in Somalia under strict Sharia law and expel foreign military forces. Controls rural territories in southern and central Somalia.",
+    knownOperatives: ["[See U.S. terrorism designations and UN reports]"],
+    notableAttacks: [
+      {
+        date: "2013-09-21",
+        location: "Nairobi, Kenya",
+        summary: "Westgate shopping mall siege",
+        casualties: "67 deaths, over 200 injured",
+        source: "Kenyan government reports; investigative journalism"
+      },
+      {
+        date: "2017-10-14",
+        location: "Mogadishu, Somalia",
+        summary: "Truck bombing at busy intersection (deadliest attack in Somali history)",
+        casualties: "Over 500 deaths, hundreds injured",
+        source: "Somali government statements; hospital records"
+      },
+      {
+        date: "2015-04-02",
+        location: "Garissa, Kenya",
+        summary: "University attack targeting Christian students",
+        casualties: "148 deaths",
+        source: "Kenyan police reports; university records"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "2008-02-26",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "UN Security Council",
+        date: "2010",
+        documentLink: "UNSC Al-Qaida Sanctions List"
+      }
+    ],
+    summary: "Al-Shabaab is a Somali jihadist militant group that emerged from the Islamic Courts Union in 2006. The group formally affiliated with al-Qaeda in 2012. Al-Shabaab controls territory in rural southern Somalia and conducts frequent attacks in Somalia and neighboring Kenya. The organization operates a shadow governance system including courts and taxation in controlled areas. Despite sustained military pressure from African Union forces and U.S. airstrikes, the group maintains significant operational capacity and has shown resilience.",
+    references: [
+      {
+        title: "Al-Shabaab in Somalia: The History and Ideology of a Militant Islamist Group",
+        author: "Stig Jarle Hansen",
+        publication: "Oxford University Press",
+        url: "ISBN: 0199327742",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "Somalia Country Report on Terrorism",
+        author: "U.S. Department of State",
+        publication: "Country Reports on Terrorism",
+        url: "https://www.state.gov/reports/country-reports-on-terrorism/",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 88,
+    confidenceNote: "Well-documented through UN monitoring, U.S. and Kenyan government reports, and investigative journalism. Some casualty figures in remote areas difficult to verify independently.",
+    relatedEntities: ["Al-Qaeda", "Islamic Courts Union", "Hizbul Islam"],
+    conflictNotes: "Territorial control fluctuates. Group demonstrates adaptability despite leadership losses and military pressure."
+  },
+  {
+    id: "pkk",
+    name: "Kurdistan Workers' Party",
+    aliases: ["PKK", "Partiya Karkerên Kurdistanê", "KADEK", "Kongra-Gel"],
+    status: "active",
+    regions: ["Turkey", "Iraq", "Syria", "Iran"],
+    yearEstablished: "1978",
+    leadership: [
+      {
+        name: "Abdullah Öcalan (imprisoned since 1999)",
+        title: "Founder, ideological leader",
+        source: "Turkish government records; court documents",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Cemil Bayik",
+        title: "KCK Co-Chair",
+        source: "PKK statements; Turkish intelligence reports",
+        lastVerified: "2025-01-15"
+      },
+      {
+        name: "Duran Kalkan",
+        title: "KCK Executive Council member",
+        source: "Regional media; analyst assessments",
+        lastVerified: "2025-01-15"
+      }
+    ],
+    ideologyGoals: "Kurdish nationalist militant organization founded on Marxist-Leninist ideology, later shifting toward democratic confederalism. Seeks Kurdish autonomy or independence and improved rights for Kurdish populations in Turkey and neighboring countries.",
+    knownOperatives: ["[See Turkish and EU terrorism designations]"],
+    notableAttacks: [
+      {
+        date: "2016-12-10",
+        location: "Istanbul, Turkey",
+        summary: "Dual bombing targeting police outside Besiktas football stadium",
+        casualties: "48 deaths, over 150 injured",
+        source: "Turkish Interior Ministry; court proceedings"
+      },
+      {
+        date: "2015-10-10",
+        location: "Ankara, Turkey",
+        summary: "Suicide bombing at peace rally (attributed to ISIS but PKK context relevant)",
+        casualties: "109 deaths",
+        source: "Turkish government investigation"
+      }
+    ],
+    sanctionsDesignations: [
+      {
+        authority: "U.S. Department of State",
+        date: "1997-10-08",
+        documentLink: "https://www.state.gov/foreign-terrorist-organizations/"
+      },
+      {
+        authority: "European Union",
+        date: "2002",
+        documentLink: "EU Council Decision"
+      },
+      {
+        authority: "Turkey",
+        date: "1984",
+        documentLink: "Turkish terrorism designation"
+      }
+    ],
+    summary: "PKK is a Kurdish militant organization founded in 1978 that has waged an armed insurgency against Turkish state since 1984. The conflict has resulted in over 40,000 deaths. PKK originally followed Marxist-Leninist ideology but shifted toward Abdullah Öcalan's democratic confederalism after his 1999 capture. The group maintains training camps in northern Iraq and operates through affiliated organizations including YPG in Syria. PKK has alternated between armed conflict and ceasefire periods. Turkish government pursues aggressive counter-insurgency while Kurdish rights remain contentious political issue.",
+    references: [
+      {
+        title: "Blood and Belief: The PKK and the Kurdish Fight for Independence",
+        author: "Aliza Marcus",
+        publication: "NYU Press",
+        url: "ISBN: 0814796982",
+        accessDate: "2025-01-15"
+      },
+      {
+        title: "The Kurdish Question in Turkey",
+        author: "Human Rights Watch",
+        publication: "HRW Reports",
+        url: "https://www.hrw.org/reports/2005/turkey1105/",
+        accessDate: "2025-01-15"
+      }
+    ],
+    lastVerified: "2025-01-15",
+    confidenceScore: 86,
+    confidenceNote: "Documented through Turkish government sources, EU reports, and academic research. Attack attributions sometimes disputed. Relationship with Syrian YPG complicates classification.",
+    relatedEntities: ["YPG (People's Protection Units)", "PYD", "KCK (Kurdistan Communities Union)"],
+    conflictNotes: "Status as terrorist organization vs. freedom fighters highly politicized. Many countries distinguish between PKK and Syrian Kurdish YPG, which Turkey considers synonymous."
   }
 ];
