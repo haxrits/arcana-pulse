@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Database, Shield, Search, AlertTriangle, FileText, Eye, Users, Lock, Wifi, CreditCard, Mail, Phone, MapPin } from "lucide-react";
+import { Database, Shield, Search, AlertTriangle, FileText, Eye, Users, Lock, Wifi, CreditCard, Mail, Phone, MapPin, ChevronDown, Calendar, DollarSign, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContentWarning } from "@/components/ContentWarning";
 import { OrgCard } from "@/components/OrgCard";
@@ -12,6 +12,7 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [regionFilter, setRegionFilter] = useState("all");
   const [statusFilter, setStatusFilter] = useState("all");
+  const [showCyberCases, setShowCyberCases] = useState(false);
 
   const filteredOrgs = sampleOrganizations.filter((org) => {
     const matchesSearch = 
@@ -525,6 +526,285 @@ const Index = () => {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Major Cyber Crime Cases Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-3 mb-4">
+                <Globe className="h-10 w-10 text-primary neon-glow" />
+                <h2 className="font-display text-3xl font-bold cyber-heading">
+                  Historic Cyber Crime Cases
+                </h2>
+              </div>
+              <p className="text-muted-foreground max-w-3xl mx-auto mb-6">
+                Learning from history's most devastating cyber attacks helps us understand evolving threats 
+                and strengthen our digital defenses. These landmark cases reveal the real-world impact of cybercrime.
+              </p>
+            </div>
+
+            {/* Cyber Crime Stats */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+              <div className="glass-panel p-4 rounded-lg text-center border border-primary/20">
+                <div className="text-2xl font-bold text-primary mb-1 font-mono">$6 Trillion</div>
+                <div className="text-xs text-muted-foreground">Est. Global Cybercrime Costs (2021)</div>
+              </div>
+              <div className="glass-panel p-4 rounded-lg text-center border border-primary/20">
+                <div className="text-2xl font-bold text-primary mb-1 font-mono">4.1 Billion</div>
+                <div className="text-xs text-muted-foreground">Records Exposed (2021)</div>
+              </div>
+              <div className="glass-panel p-4 rounded-lg text-center border border-primary/20">
+                <div className="text-2xl font-bold text-primary mb-1 font-mono">623 Million</div>
+                <div className="text-xs text-muted-foreground">Ransomware Attacks (2021)</div>
+              </div>
+              <div className="glass-panel p-4 rounded-lg text-center border border-primary/20">
+                <div className="text-2xl font-bold text-primary mb-1 font-mono">3.4 Million</div>
+                <div className="text-xs text-muted-foreground">Phishing Sites (Monthly)</div>
+              </div>
+            </div>
+
+            {/* Top Cases Preview (Always Visible) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              {/* Case 1: Equifax */}
+              <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 className="font-display text-xl font-semibold mb-1">Equifax Data Breach</h3>
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="h-3 w-3" /> 2017
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <DollarSign className="h-3 w-3" /> $575M - $1.4B Loss
+                      </span>
+                    </div>
+                  </div>
+                  <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-mono">CRITICAL</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  One of the largest data breaches in history exposed personal information of 147 million people, 
+                  including Social Security numbers, birth dates, addresses, and driver's license numbers. 
+                  The breach was caused by an unpatched Apache Struts vulnerability.
+                </p>
+                <div className="space-y-1 text-xs text-muted-foreground">
+                  <p><strong className="text-primary">Impact:</strong> 147M+ victims | Identity theft surge | Congressional hearings</p>
+                  <p><strong className="text-primary">Attribution:</strong> Chinese state-sponsored APT (U.S. DOJ indictment, 2020)</p>
+                  <p><strong className="text-primary">Lesson:</strong> Timely security patches are critical for infrastructure</p>
+                </div>
+              </div>
+
+              {/* Case 2: WannaCry */}
+              <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                <div className="flex items-start justify-between mb-3">
+                  <div>
+                    <h3 className="font-display text-xl font-semibold mb-1">WannaCry Ransomware</h3>
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="h-3 w-3" /> May 2017
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <DollarSign className="h-3 w-3" /> $4B+ Global Damages
+                      </span>
+                    </div>
+                  </div>
+                  <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-mono">CRITICAL</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  Global ransomware cyberattack that infected over 200,000 computers across 150 countries. 
+                  Exploited Windows SMB vulnerability (EternalBlue) leaked from NSA tools. Healthcare, 
+                  logistics, and government systems crippled worldwide.
+                </p>
+                <div className="space-y-1 text-xs text-muted-foreground">
+                  <p><strong className="text-primary">Impact:</strong> NHS hospitals shut down | FedEx, Renault, Telefónica hit</p>
+                  <p><strong className="text-primary">Attribution:</strong> North Korea's Lazarus Group (U.S. & UK intelligence)</p>
+                  <p><strong className="text-primary">Lesson:</strong> Keep systems updated | Implement network segmentation</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Read More Button */}
+            <div className="text-center mb-6">
+              <Button 
+                onClick={() => setShowCyberCases(!showCyberCases)}
+                className="glass-panel px-8 py-6 text-lg hover:scale-105 transition-all duration-300 border border-primary/30"
+              >
+                {showCyberCases ? "Show Less" : "Read More Cases"}
+                <ChevronDown className={`ml-2 h-5 w-5 transition-transform duration-300 ${showCyberCases ? "rotate-180" : ""}`} />
+              </Button>
+            </div>
+
+            {/* Expandable Additional Cases */}
+            {showCyberCases && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
+                {/* Case 3: Yahoo */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">Yahoo Data Breaches</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> 2013-2014
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-3 w-3" /> $350M+ Settlement
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-mono">CRITICAL</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    The largest data breach in history compromised all 3 billion Yahoo accounts. Stolen data 
+                    included names, email addresses, phone numbers, hashed passwords, and security questions. 
+                    Breach wasn't disclosed until 2016, reducing Verizon acquisition price by $350M.
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> 3 billion accounts | Delayed disclosure scandal</p>
+                    <p><strong className="text-primary">Attribution:</strong> Russian intelligence officers (U.S. DOJ, 2017)</p>
+                    <p><strong className="text-primary">Lesson:</strong> Transparent breach disclosure is legally & ethically required</p>
+                  </div>
+                </div>
+
+                {/* Case 4: SolarWinds */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">SolarWinds Supply Chain Attack</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> Dec 2020
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Globe className="h-3 w-3" /> 18,000+ Organizations
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded font-mono">HIGH</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Sophisticated supply chain attack inserted malicious code into SolarWinds Orion software updates. 
+                    Compromised Fortune 500 companies, government agencies (Treasury, Commerce, DHS), and critical 
+                    infrastructure. Undetected for months with far-reaching espionage implications.
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> U.S. govt agencies | Microsoft | Cisco | Intel | FireEye</p>
+                    <p><strong className="text-primary">Attribution:</strong> Russian SVR (APT29/Cozy Bear) per NSA/FBI</p>
+                    <p><strong className="text-primary">Lesson:</strong> Verify software supply chains | Zero-trust architecture</p>
+                  </div>
+                </div>
+
+                {/* Case 5: Colonial Pipeline */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">Colonial Pipeline Ransomware</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> May 2021
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-3 w-3" /> $4.4M Ransom Paid
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded font-mono">HIGH</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Ransomware attack on largest fuel pipeline in the U.S. (45% of East Coast supply) caused 
+                    nationwide fuel shortages, panic buying, and emergency declarations. Company paid $4.4M 
+                    ransom in Bitcoin. FBI later recovered $2.3M.
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> 5-day shutdown | State emergencies | Gas panic buying</p>
+                    <p><strong className="text-primary">Attribution:</strong> DarkSide ransomware group (Russia-based)</p>
+                    <p><strong className="text-primary">Lesson:</strong> Critical infrastructure needs robust cybersecurity posture</p>
+                  </div>
+                </div>
+
+                {/* Case 6: Target */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">Target Data Breach</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> Nov-Dec 2013
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-3 w-3" /> $292M Total Costs
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded font-mono">HIGH</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Attackers compromised an HVAC vendor's credentials to access Target's network during peak 
+                    holiday shopping season. Installed malware on POS systems to steal 40M credit/debit card 
+                    numbers and 70M customer records (names, addresses, emails, phone numbers).
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> 110M customers | CEO resignation | $292M in costs</p>
+                    <p><strong className="text-primary">Attribution:</strong> Eastern European cybercrime gang</p>
+                    <p><strong className="text-primary">Lesson:</strong> Secure third-party vendor access | Monitor anomalies</p>
+                  </div>
+                </div>
+
+                {/* Case 7: NotPetya */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">NotPetya Malware Attack</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> June 2017
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <DollarSign className="h-3 w-3" /> $10B+ Global Damage
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-mono">CRITICAL</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Disguised as ransomware but actually a wiper designed to destroy data. Spread through 
+                    compromised Ukrainian accounting software (M.E.Doc). Devastated shipping giant Maersk, 
+                    FedEx subsidiary TNT, pharmaceutical company Merck, and hundreds of organizations globally.
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> Maersk: $300M loss | Merck: $870M loss | FedEx: $400M</p>
+                    <p><strong className="text-primary">Attribution:</strong> Russian military (GRU) per White House statement</p>
+                    <p><strong className="text-primary">Lesson:</strong> Cyber attacks can be acts of war with collateral damage</p>
+                  </div>
+                </div>
+
+                {/* Case 8: Marriott/Starwood */}
+                <div className="glass-panel p-6 rounded-xl border-l-4 border-l-primary/50 hover:border-l-primary transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold mb-1">Marriott-Starwood Breach</h3>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" /> 2014-2018
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Globe className="h-3 w-3" /> 500M Guests
+                        </span>
+                      </div>
+                    </div>
+                    <span className="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded font-mono">CRITICAL</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Hackers accessed Starwood's reservation database for 4 years undetected (before and after 
+                    Marriott acquisition). Compromised 500M guest records including passport numbers, payment 
+                    cards, travel history. Likely state-sponsored espionage to track travelers.
+                  </p>
+                  <div className="space-y-1 text-xs text-muted-foreground">
+                    <p><strong className="text-primary">Impact:</strong> 500M records | Passport data | UK £99M fine (GDPR)</p>
+                    <p><strong className="text-primary">Attribution:</strong> Chinese intelligence (APT41) per investigators</p>
+                    <p><strong className="text-primary">Lesson:</strong> Due diligence in M&A | Long-term persistent threats exist</p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
