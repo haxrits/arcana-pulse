@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Database, Shield, Search, AlertTriangle, FileText } from "lucide-react";
+import { Database, Shield, Search, AlertTriangle, FileText, Eye, Users, Lock, Wifi, CreditCard, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContentWarning } from "@/components/ContentWarning";
 import { OrgCard } from "@/components/OrgCard";
@@ -185,6 +185,347 @@ const Index = () => {
               <p className="text-muted-foreground">No organizations match your filters</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Safety from Terrorism Section */}
+      <section className="py-16 px-6 border-t border-border/50 bg-gradient-to-b from-background to-primary/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Shield className="h-12 w-12 text-primary mx-auto mb-4 neon-glow" />
+            <h2 className="font-display text-4xl font-bold mb-4 cyber-heading">
+              Stay Safe from Terrorism
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Practical guidelines and awareness tips to help individuals and communities 
+              recognize threats and respond appropriately to potential terrorist activity.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Awareness Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300">
+              <Eye className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Stay Aware</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Report suspicious behavior or unattended packages to authorities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Trust your instincts—if something feels wrong, alert security</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Be observant in crowded public spaces and transportation hubs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Know your surroundings and identify emergency exits</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Community Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: "100ms" }}>
+              <Users className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Community Vigilance</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Build strong community networks to identify radicalization early</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Educate youth about extremist recruitment tactics online and offline</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Support intervention programs for at-risk individuals</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Foster inclusive environments that counter divisive ideologies</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Emergency Response Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: "200ms" }}>
+              <AlertTriangle className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Emergency Response</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Know "Run, Hide, Fight" protocol for active threat situations</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Keep emergency contacts readily accessible (police, family)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Follow instructions from law enforcement during incidents</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Participate in workplace and community safety drills</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Online Safety Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: "300ms" }}>
+              <Wifi className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Online Awareness</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Recognize extremist propaganda and recruitment messaging online</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Report violent or extremist content to platform moderators</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Be cautious of echo chambers that promote radical viewpoints</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Verify information sources and resist disinformation</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Travel Safety Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: "400ms" }}>
+              <MapPin className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Travel Precautions</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Check government travel advisories before visiting high-risk regions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Register with your embassy when traveling to conflict zones</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Avoid large gatherings and demonstrations in unstable areas</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Keep low profile and avoid discussing politics in sensitive regions</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300" style={{ animationDelay: "500ms" }}>
+              <Phone className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Report & Resources</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>FBI Tip Line: 1-800-CALL-FBI or tips.fbi.gov</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>DHS "If You See Something, Say Something" hotline</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Local law enforcement non-emergency numbers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Counter-extremism support: theexitusa.org</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cyber Security Section */}
+      <section className="py-16 px-6 border-t border-border/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <Lock className="h-12 w-12 text-primary mx-auto mb-4 neon-glow animate-glow-pulse" />
+            <h2 className="font-display text-4xl font-bold mb-4 cyber-heading">
+              Cyber Security & Digital Safety
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Protect yourself from cyber terrorism, online scams, identity theft, and digital threats 
+              with these essential security practices and awareness tips.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Password Security Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50">
+              <Lock className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Password Security</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Use unique, complex passwords for each account (16+ characters)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Enable two-factor authentication (2FA) on all critical accounts</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Use a reputable password manager to store credentials securely</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Never reuse passwords across multiple platforms</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Phishing Protection Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50" style={{ animationDelay: "100ms" }}>
+              <Mail className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Phishing Protection</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Verify sender email addresses before clicking links or attachments</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Hover over links to preview URLs before clicking</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Never provide sensitive info via email or unsolicited calls</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Watch for urgency tactics and grammatical errors in messages</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Financial Security Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50" style={{ animationDelay: "200ms" }}>
+              <CreditCard className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Financial Security</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Monitor bank statements and credit reports regularly</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Use virtual credit card numbers for online purchases</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Enable fraud alerts and transaction notifications</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Only shop on secure (HTTPS) websites with verified certificates</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Device Security Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50" style={{ animationDelay: "300ms" }}>
+              <Shield className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Device Protection</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Keep operating systems and software updated with security patches</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Install reputable antivirus/anti-malware software</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Enable device encryption and remote wipe capabilities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Avoid downloading apps or files from untrusted sources</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Network Security Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50" style={{ animationDelay: "400ms" }}>
+              <Wifi className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Network Security</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Avoid public Wi-Fi for sensitive transactions; use VPN if necessary</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Secure home Wi-Fi with WPA3 encryption and strong passwords</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Change default router credentials and disable remote access</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Use firewall protection on all devices</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Cyber Crime Reporting Card */}
+            <div className="glass-panel p-6 rounded-xl animate-fade-in hover:scale-105 transition-transform duration-300 border-l-2 border-l-primary/50" style={{ animationDelay: "500ms" }}>
+              <AlertTriangle className="h-8 w-8 text-primary mb-4" />
+              <h3 className="font-display text-xl font-semibold mb-3">Report Cyber Crime</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>FBI Internet Crime Complaint Center: ic3.gov</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Federal Trade Commission: reportfraud.ftc.gov</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Report identity theft: identitytheft.gov</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Document all evidence: screenshots, emails, transaction records</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Important Notice */}
+          <div className="mt-12 glass-panel p-6 rounded-xl border-l-4 border-l-primary">
+            <div className="flex items-start gap-4">
+              <AlertTriangle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-display text-lg font-semibold mb-2">Stay Vigilant</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Cyber terrorism and cybercrime evolve rapidly. Stay informed about new threats, 
+                  regularly update your security practices, and educate family members about digital safety. 
+                  Remember: legitimate organizations will never ask for passwords or sensitive information 
+                  via email or unsolicited calls. When in doubt, contact the organization directly using 
+                  official contact information.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
