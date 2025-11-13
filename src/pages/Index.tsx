@@ -853,7 +853,7 @@ const Index = () => {
             All information is sourced from publicly available documents. Last updated: 2025-01-15
           </p>
           <p className="mb-4 text-xs">
-            Developed by rithik
+            Developed by Rithik, Rakshit & Viyanshi
           </p>
           <div className="flex items-center justify-center gap-6">
             <Button variant="link" size="sm" className="text-primary">
